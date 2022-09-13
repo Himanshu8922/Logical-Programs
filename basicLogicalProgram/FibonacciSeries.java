@@ -7,7 +7,7 @@ public class FibonacciSeries {
 	public static void main(String[] args) {
 		
 		int n1=0, n2=1, n3;	
-		Scanner sc  = new Scanner(System.in);
+		try (Scanner sc  = new Scanner(System.in)) {
 		System.out.println("enter the number");
 		int number = sc.nextInt();
 		for(int i=1; i<=number; i++) {
@@ -18,4 +18,5 @@ public class FibonacciSeries {
 		}
 	}
 
+}
 }
